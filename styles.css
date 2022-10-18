@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh;
+
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+ul{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+i{
+    height: 80px;
+    width: 80px;
+    display: block;
+    background-repeat: none;
+    background-size: contain;
+}
+
+.about{
+    max-width: 70vw;
+    line-height: 2;
+}
+
+.github{
+    background-image: url('./images/PNG/GitHub-Mark-120px-plus.png');
+    border-radius: 50%;
+
+}
+
+.linkedin{
+    background-image: url('./images/PNG/In-Blue-128@2x.png');
+}
+
+.social-site{
+    font-size: 1rem;
+}
+
+footer{
+    display: flex;
+    min-height: 200px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+

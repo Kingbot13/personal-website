@@ -4,33 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev Dylan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet"/>
+    <title>Dylan King</title>
 </head>
 <body>
-    <h1>Web Dev Dylan</h1>
-    <!-- social icons -->
-    <i></i>
-    <i></i>
+    <h1>Dylan King</h1>
     <main>
-        <section class="hero">
+        <section class="hero" id="top">
             <article>
-                <h1>who am i?</h1>
-                <p>     A father, husband, and a web developer. I’m first and formost a family man. I love nothing more than my family. Web development is right behind family. I’m passionate about web development  because I love the design aspect of front end development and I love the technical and logical aspects of back end development. It’s everything I crave in a career.</p>
-                <!-- picture of myself and wife -->
-                <img src="" alt="">
-                <!-- envelope svg/call to action -->
-                <img src="" alt="">
-                <a href="#">about</a>
-                <a href="#">contact</a>
+                <h2>About</h2>
+                <p class="about">A father first; Passionate full stack software developer second. When I'm not playing with my kids or reading stories to them,
+                    I'm writing code. I have 30+ projects on my <a href="https://github.com/Kingbot13" target="_blank">Github account</a> and I 
+                    intend to add more! I love learning new skills and refining skills I've already acquired.
+                </p>
             </article>
         </section>
-        <section class="projects">
-            <h1>projects</h1>
-            <hr>
-            <div>
-                <h2>your project here</h2>
-            </div>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Fakebook</h3>
+                    <p>A Facebook look-a-like that features the same core functionality. It is my most impressive project to date.</p>
+                </li>
+                <li>
+                    <h3>Fakebook Server</h3>
+                    <p>An Express api backend that serves data to the Fakebook client and uses MongoDB to store data.</p>
+                </li>
+                <li>
+                    <h3>Blog Admin</h3>
+                    <p>A blog admin site that handles creating, updating, publishing, unpublishing and deleting posts.</p>
+                </li>
+                <li>
+                    <h3>Blog Public</h3>
+                    <p>A blog site where the public can view published posts.</p>
+                </li>
+                <li>
+                    <h3>Blog Server</h3>
+                    <p>An Express api backend that serves data to the Blog Admin and Blog Public clients and uses MongoDB to store data.</p>
+                </li>
+            </ul>
         </section>
     </main>
+    <footer>
+        <div>
+            <i class="github"><a href="https://github.com/Kingbot13" target="_blank"></a></i>
+            <p class="social-site">Github</p>
+        </div>
+        <div>
+            <i class="linkedin"><a href="https://www.linkedin.com/in/dylanwesleyking/" target="_blank"></a></i>
+            <p class="social-site">LinkedIn</p>
+        </div>
+    </footer>
 </body>
 </html>
