@@ -1,84 +1,120 @@
+:root {
+  --primary-color: rgba(13, 31, 216, 0.7);
+  --link-color: #ffba3f;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 85vh;
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 85vh;
+  width: 100%;
 }
 
-h2{
-    font-size: 2.5rem;
+h1 {
+  font-size: 10rem;
 }
 
-h3{
-    font-size: 2rem;
+h2 {
+  font-size: 2.5rem;
 }
 
-p{
-    font-size: 1.5rem;
-    margin: auto;
+h3 {
+  font-size: 2rem;
 }
 
-ul{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px;
+p {
+  font-size: 1.5rem;
+  margin: auto;
 }
 
-li{
-    list-style-type: none;
+ul {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px 20px;
 }
 
-i{
-    height: 80px;
-    width: 80px;
-    display: block;
-    background-repeat: none;
-    background-size: contain;
+li {
+  list-style-type: none;
 }
 
-.about{
-    max-width: 70vw;
-    line-height: 2;
+li p {
+  text-align: left;
 }
 
-.github{
-    background-image: url('./images/PNG/GitHub-Mark-120px-plus.png');
-    border-radius: 50%;
-
+i {
+  height: 80px;
+  width: 80px;
+  display: block;
+  background-repeat: none;
+  background-size: contain;
 }
 
-.linkedin{
-    background-image: url('./images/PNG/In-Blue-128@2x.png');
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
 }
 
-.social-site{
-    font-size: 1rem;
+/* top section */
+.hero {
+  height: 100vh;
+  background-image: url("./images/PNG/IMG_0674.JPEG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+  color: white;
 }
 
-footer{
-    display: flex;
-    min-height: 200px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  height: 100%;
 }
 
+.about {
+  max-width: 70vw;
+  line-height: 2;
+  text-align: left;
+}
+
+.github {
+  background-image: url("./images/PNG/GitHub-Mark-120px-plus.png");
+  border-radius: 50%;
+}
+
+.linkedin {
+  background-image: url("./images/PNG/In-Blue-128@2x.png");
+}
+
+.social-site {
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  min-height: 200px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
