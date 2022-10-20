@@ -30,6 +30,7 @@ main {
 
 h1 {
   font-size: 10rem;
+  position: relative;
 }
 
 h2 {
@@ -96,6 +97,27 @@ a {
   max-width: 70vw;
   line-height: 2;
   text-align: left;
+  position: relative;
+}
+
+.hero article {
+  position: relative;
+}
+
+.hero article,
+h1 {
+  animation: slide-down 2s ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    top: -1000px;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    top: 0;
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 .github {
