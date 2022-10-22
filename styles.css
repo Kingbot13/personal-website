@@ -91,7 +91,7 @@ a {
 
 /* top section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./images/PNG/IMG_0674.JPEG");
   background-repeat: no-repeat;
   background-size: cover;
