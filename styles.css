@@ -60,9 +60,8 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.19);
+  box-shadow: 1px 10px 11px 0px rgba(0, 0, 0, 0.19);
   min-height: 300px;
-  
 }
 
 li p {
@@ -96,6 +95,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 30%;
+  background-position-x: 36%;
   color: white;
 }
 
@@ -160,4 +160,10 @@ footer {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 8rem;
+  }
 }
