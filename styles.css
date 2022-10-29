@@ -1,6 +1,8 @@
 :root {
   --primary-color: rgba(13, 31, 216, 0.7);
   --link-color: #ffba3f;
+  --live-btn-color: rgba(123, 26, 237);
+  --repo-btn-color: #ED9A26;
 }
 
 * {
@@ -139,6 +141,21 @@ h1 {
   flex-direction: column;
   min-height: 600px;
   justify-content: space-around;
+}
+
+.live-btn {
+  background-color: var(--live-btn-color);
+  color: white;
+}
+
+.repo-btn {
+  background-color: var(--repo-btn-color);
+}
+
+.live-btn, .repo-btn {
+  border: none;
+  min-width: 75px;
+  font-size: 1.25rem;
 }
 
 .github {
