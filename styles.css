@@ -4,6 +4,7 @@
   --live-btn-color: rgba(123, 26, 237);
   --live-btn-transition: #0aa136;
   --repo-btn-color: #ed9a26;
+  --repo-btn-transition-color: #32edd1;
 }
 
 * {
@@ -161,7 +162,14 @@ li div {
 }
 
 .repo-btn {
-  background-color: var(--repo-btn-color);
+  background: linear-gradient(
+    to right,
+    var(--repo-btn-transition-color) 50%,
+    var(--repo-btn-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 200ms ease-out;
 }
 
 .live-btn,
@@ -171,7 +179,8 @@ li div {
   font-size: 1.25rem;
 }
 
-.live-btn:hover {
+.live-btn:hover,
+.repo-btn:hover {
   background-position: left bottom;
 }
 
