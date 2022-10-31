@@ -2,7 +2,8 @@
   --primary-color: rgba(13, 31, 216, 0.7);
   --link-color: #ffba3f;
   --live-btn-color: rgba(123, 26, 237);
-  --repo-btn-color: #ED9A26;
+  --live-btn-transition: #0aa136;
+  --repo-btn-color: #ed9a26;
 }
 
 * {
@@ -143,6 +144,10 @@ h1 {
   justify-content: space-around;
 }
 
+li div {
+  margin-bottom: 8px;
+}
+
 .live-btn {
   background-color: var(--live-btn-color);
   color: white;
@@ -152,7 +157,8 @@ h1 {
   background-color: var(--repo-btn-color);
 }
 
-.live-btn, .repo-btn {
+.live-btn,
+.repo-btn {
   border: none;
   min-width: 75px;
   font-size: 1.25rem;
