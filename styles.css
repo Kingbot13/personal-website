@@ -149,8 +149,15 @@ li div {
 }
 
 .live-btn {
-  background-color: var(--live-btn-color);
+  background: linear-gradient(
+    to right,
+    var(--live-btn-transition) 50%,
+    var(--live-btn-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
   color: white;
+  transition: all 200ms ease-out;
 }
 
 .repo-btn {
@@ -162,6 +169,10 @@ li div {
   border: none;
   min-width: 75px;
   font-size: 1.25rem;
+}
+
+.live-btn:hover {
+  background-position: left bottom;
 }
 
 .github {
