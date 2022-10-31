@@ -29,7 +29,16 @@
         <section class="projects" id="projects">
             <div class="projects-header">
                 <span class="material-symbols-outlined">construction</span>
-                <h2>Projects</h2>
+                    <svg width="350">
+                        <defs>
+                            <filter id="h2-filter">
+                                <feMorphology in="SourceGraphic" operator="dilate" radius='4'></feMorphology>
+                                <feOffset in="SourceAlpha" dx="10" dy="10"></feOffset>
+                            </filter>
+                        </defs>
+                        <text x="50%" y="50%" font-size="6rem" text-anchor="middle" filter="url(#h2-filter)">Projects</text>
+                        <!-- <h2 filter="url(#h2-filter)">Projects</h2> -->
+                    </svg>
             </div>
             <ul>
                 <li>
