@@ -29,16 +29,25 @@
         <section class="projects" id="projects">
             <div class="projects-header">
                 <span class="material-symbols-outlined">construction</span>
-                    <svg width="350">
-                        <defs>
-                            <filter id="h2-filter">
-                                <feMorphology in="SourceGraphic" operator="dilate" radius='4'></feMorphology>
-                                <feOffset in="SourceAlpha" dx="10" dy="10"></feOffset>
-                            </filter>
-                        </defs>
-                        <text x="50%" y="50%" font-size="6rem" text-anchor="middle" filter="url(#h2-filter)">Projects</text>
-                        <!-- <h2 filter="url(#h2-filter)">Projects</h2> -->
+                    <svg class="svg-filter" width="0" height="0">    
+                        <filter id="h2-filter">
+                            <feMorphology in="SourceAlpha" operator="dilate" radius='5' result="DILATE"></feMorphology>
+                            <feConvolveMatrix in="DILATE" divisor="1" order="3,3" kernelMatrix=
+                            "1 0 0,
+                             0 1 0,
+                             0 0 1" result="EXTRUDE" />           
+                            <feOffset in="EXTRUDE" dx="4" dy="4" result="OFFSET"></feOffset>
+                            <feComposite in="OFFSET" in2="DILATE" operator="out" result="CUT" />
+                            <feFlood flood-color="rgb(13, 31, 216)" result="COLOR" />
+                            <feComposite in="COLOR" in2="CUT" operator="in" result="COLORED-BLUE" />
+                            <feMerge result="merge" >
+                                <feMergeNode in="COLORED-BLUE" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                        
                     </svg>
+                    <h2 class="projects-h2">Projects</h2>
             </div>
             <ul>
                 <li>

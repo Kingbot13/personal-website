@@ -151,6 +151,14 @@ h1 {
   font-size: 90px;
 }
 
+.svg-filter {
+  visibility: hidden;
+}
+
+.projects-h2 {
+  filter: url("#h2-filter");
+}
+
 .projects {
   display: flex;
   flex-direction: column;
