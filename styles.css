@@ -226,8 +226,15 @@ footer {
   align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   h1 {
     font-size: 8rem;
+  }
+
+  .projects-h2 {
+    font-size: 3.5rem;
+  }
+  .projects-header span {
+    font-size: 40px;
   }
 }
